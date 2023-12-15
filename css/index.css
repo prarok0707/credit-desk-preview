@@ -30,6 +30,7 @@
     --tech-greentekila: #0ff14e;
     --tech-barbie: #ff00a8;
     --zIndex: 999;
+    --zIndexSelectDropdown: 99;
 }
 
 @media (min-width: 768px) {
