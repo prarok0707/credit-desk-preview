@@ -270,6 +270,11 @@ body.no-scroll {
     }
 }
 
+.button_light {
+    --bg: var(--buttons-white, #fff);
+    --bg-hover: var(--gray-gray-40, #bcbccc);
+}
+
 .button_secondary {
     --height: 2.5rem;
     --fs: 0.875rem;
