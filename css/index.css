@@ -219,6 +219,7 @@ body.no-scroll {
     cursor: pointer;
     font-size: var(--fs);
     font-style: normal;
+    text-align: center;
     font-weight: 500;
     line-height: 1.2;
  /* 150% */
