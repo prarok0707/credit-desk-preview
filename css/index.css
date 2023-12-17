@@ -585,12 +585,12 @@ body.no-scroll {
 }
 
 .header__action.active .header__action-icon {
-    fill: var(--buttons-yellow, #fee000);
+    stroke: var(--buttons-yellow, #fee000);
 }
 
-.header__action.active .header__action-icon_stroke {
-    fill: transparent;
-    stroke: var(--buttons-yellow, #fee000);
+.header__action.active .header__action-icon_fill {
+    stroke: none;
+    fill: var(--buttons-yellow, #fee000);
 }
 
 @media (min-width: 768px) {
@@ -623,13 +623,13 @@ body.no-scroll {
     height: 1em;
     margin: 0 0.625em 0 0;
     display: block;
-    fill: var(--gray-gray-40, #bcbccc);
+    stroke: var(--gray-gray-40, #bcbccc);
     transition: fill 0.2s linear, stroke 0.2s linear;
 }
 
-.header__action-icon_stroke {
-    fill: transparent;
-    stroke: var(--gray-gray-40, #bcbccc);
+.header__action-icon_fill {
+    stroke: none;
+    fill: var(--gray-gray-40, #bcbccc);
 }
 
 @media (min-width: 768px) {
