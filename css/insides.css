@@ -638,7 +638,13 @@ body.no-scroll {
     }
 }
 
-.header__menu-button svg {
+@media (min-width: 768px) {
+    .header__menu-button {
+        display: none;
+    }
+}
+
+.header__menu-icon {
     flex: 0 0 1.125rem;
     width: 1.125rem;
     height: 1.125rem;
@@ -646,12 +652,6 @@ body.no-scroll {
     fill: transparent;
     stroke: currentColor;
     stroke-width: 2;
-}
-
-@media (min-width: 768px) {
-    .header__menu-button {
-        display: none;
-    }
 }
 
 .footer {

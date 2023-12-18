@@ -106,7 +106,9 @@
                     </svg>
                     Рассылка</span
                   >
-                  <span class="profile-header__action header__action"
+                  <span
+                    class="profile-header__action header__action"
+                    data-tab-button="documents"
                     ><svg
                       class="header__action-icon"
                       xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +122,9 @@
                     </svg>
                     Документы</span
                   >
-                  <span class="profile-header__action header__action"
+                  <span
+                    class="profile-header__action header__action"
+                    data-tab-button="feedback"
                     ><svg
                       class="header__action-icon"
                       xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +138,9 @@
                     </svg>
                     Обратная связь</span
                   >
-                  <span class="profile-header__action header__action"
+                  <span
+                    class="profile-header__action header__action"
+                    data-tab-button="about"
                     ><svg
                       class="header__action-icon"
                       viewBox="0 0 16 16"
@@ -150,7 +156,7 @@
                     </svg>
                     О сервисе</span
                   >
-                  <span class="profile-header__action header__action"
+                  <a class="profile-header__action header__action" href="#"
                     ><svg
                       class="header__action-icon header__action-icon_fill"
                       xmlns="http://www.w3.org/2000/svg"
@@ -161,24 +167,26 @@
                         d="M8 7.53285C7.72386 7.53285 7.5 7.75671 7.5 8.03285C7.5 8.309 7.72386 8.53285 8 8.53285V7.53285ZM15 8.03285L15.3573 8.38258C15.5461 8.18974 15.5478 7.88195 15.3611 7.68706L15 8.03285ZM12.4572 4.65421C12.2663 4.45475 11.9498 4.44788 11.7503 4.63885C11.5508 4.82983 11.544 5.14634 11.7349 5.34579L12.4572 4.65421ZM11.7388 10.6503C11.5456 10.8476 11.549 11.1642 11.7464 11.3573C11.9437 11.5505 12.2603 11.5471 12.4534 11.3497L11.7388 10.6503ZM8 8.53285H15V7.53285H8V8.53285ZM15.3611 7.68706L12.4572 4.65421L11.7349 5.34579L14.6389 8.37865L15.3611 7.68706ZM14.6427 7.68313L11.7388 10.6503L12.4534 11.3497L15.3573 8.38258L14.6427 7.68313ZM4 1.5H7V0.5H4V1.5ZM7 14.5H4V15.5H7V14.5ZM1.5 12.2308V3.76923H0.5V12.2308H1.5ZM4 14.5C2.58085 14.5 1.5 13.4471 1.5 12.2308H0.5C0.5 14.0732 2.10544 15.5 4 15.5V14.5ZM7 15.5C8.89456 15.5 10.5 14.0732 10.5 12.2308H9.5C9.5 13.4471 8.41915 14.5 7 14.5V15.5ZM7 1.5C8.41915 1.5 9.5 2.5529 9.5 3.76923H10.5C10.5 1.92676 8.89456 0.5 7 0.5V1.5ZM4 0.5C2.10544 0.5 0.5 1.92676 0.5 3.76923H1.5C1.5 2.5529 2.58085 1.5 4 1.5V0.5Z"
                       />
                     </svg>
-                    Выход</span
+                    Выход</a
                   >
                   <span class="header__action">Почему мы?</span>
                   <span class="header__action">О сервисе</span>
                   <span class="header__action">Вопросы - ответы</span>
                 </div>
               </div>
-              <a class="header__menu-button button button_icon" href="#"
-                ><svg>
-                  <use
-                    href="./images/sprite.svg#user"
-                    xlink:href="./images/sprite.svg#user"
-                  ></use>
-                </svg>
-                Иван</a
-              >
+              <span
+                class="profile-header__offer-button header__menu-button button button_sm"
+                data-tab-button="offers"
+                >Мои предложения
+                <span class="button__icon"
+                  ><svg>
+                    <use
+                      href="./images/sprite.svg#arrow"
+                      xlink:href="./images/sprite.svg#arrow"
+                    ></use></svg></span
+              ></span>
             </div>
-            <a class="header__user" href="#"
+            <a class="profile-header__user header__user" href="#"
               ><svg>
                 <use
                   href="./images/sprite.svg#user"
@@ -301,7 +309,10 @@
                       </div>
                       <span class="profile-sidebar__text">Рассылка</span>
                     </div>
-                    <div class="profile-sidebar__item">
+                    <div
+                      class="profile-sidebar__item"
+                      data-tab-button="documents"
+                    >
                       <div class="profile-sidebar__icon">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -315,7 +326,10 @@
                       </div>
                       <span class="profile-sidebar__text">Документы</span>
                     </div>
-                    <div class="profile-sidebar__item">
+                    <div
+                      class="profile-sidebar__item"
+                      data-tab-button="feedback"
+                    >
                       <div class="profile-sidebar__icon">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -330,7 +344,7 @@
                       </div>
                       <span class="profile-sidebar__text">Обратная связь</span>
                     </div>
-                    <div class="profile-sidebar__item">
+                    <div class="profile-sidebar__item" data-tab-button="about">
                       <div class="profile-sidebar__icon">
                         <svg
                           viewBox="0 0 16 16"
@@ -350,8 +364,8 @@
                       </div>
                       <span class="profile-sidebar__text">О сервисе</span>
                     </div>
-                    <div class="profile-sidebar__item">
-                      <div
+                    <a class="profile-sidebar__item" href="#"
+                      ><div
                         class="profile-sidebar__icon profile-sidebar__icon_fill"
                       >
                         <svg
@@ -364,10 +378,12 @@
                           />
                         </svg>
                       </div>
-                      <span class="profile-sidebar__text">Выход</span>
-                    </div>
+                      <span class="profile-sidebar__text">Выход</span></a
+                    >
                   </div>
-                  <span class="profile-sidebar__button button button_secondary"
+                  <span
+                    class="profile-sidebar__button button button_secondary"
+                    data-tab-button="offers"
                     >Мои предложения</span
                   >
                 </div>
@@ -1333,6 +1349,588 @@
                         </p>
                       </div>
                     </div>
+                  </div>
+                </div>
+                <div
+                  class="profile__documents documents"
+                  data-tab-body="documents"
+                  style="display: none"
+                >
+                  <div class="documents__wrapper profile-wrapper">
+                    <h3 class="documents__title profile-title">Документы</h3>
+                    <div class="documents__items" data-accordion data-ac>
+                      <div class="documents__item" data-ac-item>
+                        <div class="documents__head">
+                          <time class="documents__date"
+                            >25 Июн 2020 - 21:40</time
+                          >
+                          <span class="documents__label"
+                            ><span
+                              >Описание услуги по займу, общей суммой 2 500 ₽ </span
+                            ><strong>2 500 ₽</strong> </span
+                          ><a
+                            class="documents__button-offers button button_secondary"
+                            href="#"
+                            >Персональные предложения</a
+                          >
+                          <a class="documents__resubmit" href="#"
+                            >Отправить код повторно</a
+                          >
+                          <div class="documents__ac-button" data-ac-button>
+                            Отчет по автоматической подачи заявки на займ
+                            <div class="documents__icon">
+                              <svg>
+                                <use
+                                  href="./images/sprite.svg#drop"
+                                  xlink:href="./images/sprite.svg#drop"
+                                ></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="documents__body" data-ac-body>
+                          <div class="documents__group">
+                            <img
+                              class="documents__logo"
+                              src="./images/documents/logo_01.png"
+                              alt="logo"
+                            />
+                            <time class="documents__date"
+                              >25 Июн 2020 - 21:40</time
+                            >
+                            <span class="documents__name">Займер</span>
+                            <p class="documents__description">
+                              Раньше весь процесс получения кредита занимал 10
+                              дней.Теперь мы можем авторизовать ссуду примерно
+                              за 30 минут.
+                            </p>
+                          </div>
+                          <div class="documents__group">
+                            <img
+                              class="documents__logo"
+                              src="./images/documents/logo_02.png"
+                              alt="logo"
+                            />
+                            <time class="documents__date"
+                              >25 Июн 2020 - 21:40</time
+                            >
+                            <span class="documents__name">Займер</span>
+                            <p class="documents__description">
+                              Раньше весь процесс получения кредита занимал 10
+                              дней.Теперь мы можем авторизовать ссуду примерно
+                              за 30 минут.
+                            </p>
+                          </div>
+                          <div class="documents__group">
+                            <img
+                              class="documents__logo"
+                              src="./images/documents/logo_03.png"
+                              alt="logo"
+                            />
+                            <time class="documents__date"
+                              >25 Июн 2020 - 21:40</time
+                            >
+                            <span class="documents__name">Займер</span>
+                            <p class="documents__description">
+                              Раньше весь процесс получения кредита занимал 10
+                              дней.Теперь мы можем авторизовать ссуду примерно
+                              за 30 минут.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="documents__item" data-ac-item>
+                        <div class="documents__head">
+                          <time class="documents__date"
+                            >25 Июн 2020 - 21:40</time
+                          >
+                          <span class="documents__label"
+                            ><span
+                              >Описание услуги по займу, общей суммой 2 500 ₽ </span
+                            ><strong>2 500 ₽</strong> </span
+                          ><a
+                            class="documents__button-offers button button_secondary"
+                            href="#"
+                            >Персональные предложения</a
+                          >
+                          <a class="documents__resubmit" href="#"
+                            >Отправить код повторно</a
+                          >
+                          <div class="documents__ac-button" data-ac-button>
+                            Отчет по автоматической подачи заявки на займ
+                            <div class="documents__icon">
+                              <svg>
+                                <use
+                                  href="./images/sprite.svg#drop"
+                                  xlink:href="./images/sprite.svg#drop"
+                                ></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="documents__body" data-ac-body>
+                          <div class="documents__group">
+                            <img
+                              class="documents__logo"
+                              src="./images/documents/logo_01.png"
+                              alt="logo"
+                            />
+                            <time class="documents__date"
+                              >25 Июн 2020 - 21:40</time
+                            >
+                            <span class="documents__name">Займер</span>
+                            <p class="documents__description">
+                              Раньше весь процесс получения кредита занимал 10
+                              дней.Теперь мы можем авторизовать ссуду примерно
+                              за 30 минут.
+                            </p>
+                          </div>
+                          <div class="documents__group">
+                            <img
+                              class="documents__logo"
+                              src="./images/documents/logo_02.png"
+                              alt="logo"
+                            />
+                            <time class="documents__date"
+                              >25 Июн 2020 - 21:40</time
+                            >
+                            <span class="documents__name">Займер</span>
+                            <p class="documents__description">
+                              Раньше весь процесс получения кредита занимал 10
+                              дней.Теперь мы можем авторизовать ссуду примерно
+                              за 30 минут.
+                            </p>
+                          </div>
+                          <div class="documents__group">
+                            <img
+                              class="documents__logo"
+                              src="./images/documents/logo_03.png"
+                              alt="logo"
+                            />
+                            <time class="documents__date"
+                              >25 Июн 2020 - 21:40</time
+                            >
+                            <span class="documents__name">Займер</span>
+                            <p class="documents__description">
+                              Раньше весь процесс получения кредита занимал 10
+                              дней.Теперь мы можем авторизовать ссуду примерно
+                              за 30 минут.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="documents__item" data-ac-item>
+                        <div class="documents__head">
+                          <time class="documents__date"
+                            >25 Июн 2020 - 21:40</time
+                          >
+                          <span class="documents__label"
+                            ><span
+                              >Описание услуги по займу, общей суммой 2 500 ₽ </span
+                            ><strong>2 500 ₽</strong> </span
+                          ><a
+                            class="documents__button-offers button button_secondary"
+                            href="#"
+                            >Персональные предложения</a
+                          >
+                          <a class="documents__resubmit" href="#"
+                            >Отправить код повторно</a
+                          >
+                          <div class="documents__ac-button" data-ac-button>
+                            Отчет по автоматической подачи заявки на займ
+                            <div class="documents__icon">
+                              <svg>
+                                <use
+                                  href="./images/sprite.svg#drop"
+                                  xlink:href="./images/sprite.svg#drop"
+                                ></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="documents__body" data-ac-body>
+                          <div class="documents__group">
+                            <img
+                              class="documents__logo"
+                              src="./images/documents/logo_01.png"
+                              alt="logo"
+                            />
+                            <time class="documents__date"
+                              >25 Июн 2020 - 21:40</time
+                            >
+                            <span class="documents__name">Займер</span>
+                            <p class="documents__description">
+                              Раньше весь процесс получения кредита занимал 10
+                              дней.Теперь мы можем авторизовать ссуду примерно
+                              за 30 минут.
+                            </p>
+                          </div>
+                          <div class="documents__group">
+                            <img
+                              class="documents__logo"
+                              src="./images/documents/logo_02.png"
+                              alt="logo"
+                            />
+                            <time class="documents__date"
+                              >25 Июн 2020 - 21:40</time
+                            >
+                            <span class="documents__name">Займер</span>
+                            <p class="documents__description">
+                              Раньше весь процесс получения кредита занимал 10
+                              дней.Теперь мы можем авторизовать ссуду примерно
+                              за 30 минут.
+                            </p>
+                          </div>
+                          <div class="documents__group">
+                            <img
+                              class="documents__logo"
+                              src="./images/documents/logo_03.png"
+                              alt="logo"
+                            />
+                            <time class="documents__date"
+                              >25 Июн 2020 - 21:40</time
+                            >
+                            <span class="documents__name">Займер</span>
+                            <p class="documents__description">
+                              Раньше весь процесс получения кредита занимал 10
+                              дней.Теперь мы можем авторизовать ссуду примерно
+                              за 30 минут.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="profile__feedback feedback"
+                  data-tab-body="feedback"
+                  style="display: none"
+                >
+                  <div class="profile-wrapper">
+                    <div class="feedback__title title">
+                      <h2 class="title__main">Форма обратной связи</h2>
+                      <p class="title__sub">
+                        Заполните, чтобы с нами связаться
+                      </p>
+                    </div>
+                    <form class="feedback__form">
+                      <div class="feedback__group">
+                        <div class="inputs input">
+                          <div class="input__wrapper">
+                            <span class="input__label">Имя</span>
+                            <label class="input__group"
+                              ><input
+                                class="input__target"
+                                type="text"
+                                placeholder="Иван" />
+                              <div class="input__bg"></div
+                            ></label>
+                          </div>
+                        </div>
+                        <div class="inputs input">
+                          <div class="input__wrapper">
+                            <span class="input__label">Email</span>
+                            <label class="input__group"
+                              ><input
+                                class="input__target"
+                                type="text"
+                                placeholder="info@mail.ru" />
+                              <div class="input__bg"></div
+                            ></label>
+                          </div>
+                        </div>
+                        <div class="inputs input">
+                          <div class="input__wrapper">
+                            <span class="input__label">Мобильный телефон</span>
+                            <label class="input__group"
+                              ><input
+                                class="input__target"
+                                type="text"
+                                placeholder="+7 (XXX) XXX-XX-XX" />
+                              <div class="input__bg"></div
+                            ></label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="inputs input">
+                        <div class="input__wrapper">
+                          <span class="input__label">Комментарий</span>
+                          <label class="input__group">
+                            <textarea
+                              class="input__target"
+                              placeholder="Введите комментарий"
+                            ></textarea>
+                            <div class="input__bg"></div
+                          ></label>
+                        </div>
+                      </div>
+                      <div class="feedback__footer">
+                        <div class="checkbox">
+                          <div class="checkbox__wrapper">
+                            <label class="checkbox__label"
+                              ><input class="checkbox__input" type="checkbox" />
+                              <div class="checkbox__icon">
+                                <svg>
+                                  <use
+                                    href="./images/sprite.svg#check"
+                                    xlink:href="./images/sprite.svg#check"
+                                  ></use>
+                                </svg>
+                              </div>
+                              <p class="checkbox__text">
+                                Я ознакомлен и согласен со
+                                <span data-popup-id="id_popup">следующим</span>
+                              </p></label
+                            >
+                          </div>
+                        </div>
+                        <button
+                          class="feedback__submit button button_sm"
+                          type="submit"
+                        >
+                          Отправить
+                          <span class="button__icon"
+                            ><svg>
+                              <use
+                                href="./images/sprite.svg#arrow"
+                                xlink:href="./images/sprite.svg#arrow"
+                              ></use></svg
+                          ></span>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                  <div id="id_popup" class="popup" data-popup>
+                    <div class="popup__wrapper" data-popup-wrapper>
+                      <div class="popup__body" data-popup-body>
+                        <div class="popup__close" data-popup-close>
+                          <svg>
+                            <use
+                              href="./images/sprite.svg#cross"
+                              xlink:href="./images/sprite.svg#cross"
+                            ></use>
+                          </svg>
+                        </div>
+                        <h2 class="popup__title">Соглашения</h2>
+                        <p class="popup__text">
+                          Даю свое согласие на
+                          <a href="#">обработку персональных данных</a> и на
+                          получение рекламных материалов, принимаю условия
+                          публичной оферты, соглашение о применении рекуррентных
+                          платежей и тарифы сервиса. Осознаю, что оплата услуг
+                          не гарантирует получение займа. Настоящим подтверждаю,
+                          что не являюсь получателем единовременных и/или
+                          регулярных денежных выплат, предусмотренных Указами
+                          Президента РФ.
+                        </p>
+                        <div class="popup__actions">
+                          <a class="popup__action button button_sm" href="#"
+                            >Далее
+                            <span class="button__icon"
+                              ><svg>
+                                <use
+                                  href="./images/sprite.svg#arrow"
+                                  xlink:href="./images/sprite.svg#arrow"
+                                ></use></svg></span
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="profile__about about"
+                  data-tab-body="about"
+                  style="display: none"
+                >
+                  <div class="about__wrapper profile-wrapper">
+                    <h3 class="about__title profile-title">О сервисе</h3>
+                    <span class="about__subtitle"
+                      >Одновременно подайте заявку, как минимум, в 3 компании
+                      для гарантированного получения займа.</span
+                    >
+                    <div class="about__body">
+                      <span class="about__label"
+                        >Договор присоединения о предоставлении юридических
+                        услуг через сеть интернет (публичная оферта)</span
+                      >
+                      <p class="about__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Elementum sagittis vitae et leo duis. Enim
+                        praesent elementum facilisis leo vel fringilla. Mauris
+                        pellentesque pulvinar pellentesque habitant morbi
+                        tristique senectus. Nibh tortor id aliquet lectus proin.
+                        Tellus elementum sagittis vitae et leo duis ut diam
+                        quam.
+                      </p>
+                      <div class="about__group">
+                        <span class="about__sublabel">1.</span>
+                        <span class="about__sublabel"
+                          >Tellus elementum sagittis vitae et leo duis ut diam
+                          quam</span
+                        >
+                        <p class="about__text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Elementum sagittis vitae et leo
+                          duis. Enim praesent elementum facilisis leo vel
+                          fringilla. Mauris pellentesque pulvinar pellentesque
+                          habitant morbi tristique senectus. Nibh tortor id
+                          aliquet lectus proin. Tellus elementum sagittis vitae
+                          et leo duis ut diam quam.
+                        </p>
+                      </div>
+                      <div class="about__group">
+                        <span class="about__sublabel">2.</span>
+                        <span class="about__sublabel"
+                          >Lorem ipsum dolor sit amet, consectetur</span
+                        >
+                        <p class="about__text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Elementum sagittis vitae et leo
+                          duis. Enim praesent elementum facilisis leo vel
+                          fringilla. Mauris pellentesque pulvinar pellentesque
+                          habitant morbi tristique senectus. Nibh tortor id
+                          aliquet lectus proin. Tellus elementum sagittis vitae
+                          et leo duis ut diam quam.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="profile__offers offers"
+                  data-tab-body="offers"
+                  style="display: none"
+                >
+                  <div class="offers__wrapper profile-wrapper">
+                    <h3 class="offers__title profile-title">Мои предложения</h3>
+                    <span class="offers__subtitle"
+                      >Одновременно подайте заявку, как минимум, в 3 компании
+                      для гарантированного получения займа.</span
+                    >
+                    <div class="offers__items">
+                      <a class="offer" href="#"
+                        ><div class="offer__wrapper">
+                          <div class="offer__logo">
+                            <img src="./images/offer/logo_01.png" alt="logo" />
+                          </div>
+                          <div class="offer__body">
+                            <div class="offer__info">
+                              <span class="offer__discount">ставка 0%</span>
+                              <strong class="offer__sum">до 30 000₽</strong>
+                            </div>
+                            <div class="offer__button button button_secondary">
+                              Оформить займ
+                            </div>
+                          </div>
+                        </div></a
+                      ><a class="offer" href="#"
+                        ><div class="offer__wrapper">
+                          <div class="offer__logo">
+                            <img src="./images/offer/logo_02.png" alt="logo" />
+                          </div>
+                          <div class="offer__body">
+                            <div class="offer__info">
+                              <span class="offer__discount">ставка 0%</span>
+                              <strong class="offer__sum">до 30 000₽</strong>
+                            </div>
+                            <div class="offer__button button button_secondary">
+                              Оформить займ
+                            </div>
+                          </div>
+                        </div></a
+                      ><a class="offer" href="#"
+                        ><div class="offer__wrapper">
+                          <div class="offer__logo">
+                            <img src="./images/offer/logo_03.png" alt="logo" />
+                          </div>
+                          <div class="offer__body">
+                            <div class="offer__info">
+                              <span class="offer__discount">ставка 0%</span>
+                              <strong class="offer__sum">до 30 000₽</strong>
+                            </div>
+                            <div class="offer__button button button_secondary">
+                              Оформить займ
+                            </div>
+                          </div>
+                        </div></a
+                      ><a class="offer" href="#"
+                        ><div class="offer__wrapper">
+                          <div class="offer__logo">
+                            <img src="./images/offer/logo_04.png" alt="logo" />
+                          </div>
+                          <div class="offer__body">
+                            <div class="offer__info">
+                              <span class="offer__discount">ставка 0%</span>
+                              <strong class="offer__sum">до 30 000₽</strong>
+                            </div>
+                            <div class="offer__button button button_secondary">
+                              Оформить займ
+                            </div>
+                          </div>
+                        </div></a
+                      ><a class="offer" href="#"
+                        ><div class="offer__wrapper">
+                          <div class="offer__logo">
+                            <img src="./images/offer/logo_05.png" alt="logo" />
+                          </div>
+                          <div class="offer__body">
+                            <div class="offer__info">
+                              <span class="offer__discount">ставка 0%</span>
+                              <strong class="offer__sum">до 30 000₽</strong>
+                            </div>
+                            <div class="offer__button button button_secondary">
+                              Оформить займ
+                            </div>
+                          </div>
+                        </div></a
+                      ><a class="offer" href="#"
+                        ><div class="offer__wrapper">
+                          <div class="offer__logo">
+                            <img src="./images/offer/logo_06.png" alt="logo" />
+                          </div>
+                          <div class="offer__body">
+                            <div class="offer__info">
+                              <span class="offer__discount">ставка 0%</span>
+                              <strong class="offer__sum">до 30 000₽</strong>
+                            </div>
+                            <div class="offer__button button button_secondary">
+                              Оформить займ
+                            </div>
+                          </div>
+                        </div></a
+                      ><a class="offer" href="#"
+                        ><div class="offer__wrapper">
+                          <div class="offer__logo">
+                            <img src="./images/offer/logo_03.png" alt="logo" />
+                          </div>
+                          <div class="offer__body">
+                            <div class="offer__info">
+                              <span class="offer__discount">ставка 0%</span>
+                              <strong class="offer__sum">до 30 000₽</strong>
+                            </div>
+                            <div class="offer__button button button_secondary">
+                              Оформить займ
+                            </div>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                    <a
+                      class="offers__more button button_sm button_light"
+                      href="#"
+                      >Показать еще варианты
+                      <span class="button__icon"
+                        ><svg>
+                          <use
+                            href="./images/sprite.svg#arrow"
+                            xlink:href="./images/sprite.svg#arrow"
+                          ></use></svg></span
+                    ></a>
                   </div>
                 </div>
               </div>
