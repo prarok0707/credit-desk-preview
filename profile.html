@@ -60,7 +60,9 @@
                     </svg>
                     Профиль</span
                   >
-                  <span class="profile-header__action header__action"
+                  <span
+                    class="profile-header__action header__action"
+                    data-tab-button="events"
                     ><svg
                       class="header__action-icon header__action-icon_fill"
                       xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +75,9 @@
                     </svg>
                     Лента событий</span
                   >
-                  <span class="profile-header__action header__action"
+                  <span
+                    class="profile-header__action header__action"
+                    data-tab-button="subscription"
                     ><svg
                       class="header__action-icon"
                       xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +90,9 @@
                     </svg>
                     Подписка</span
                   >
-                  <span class="profile-header__action header__action"
+                  <span
+                    class="profile-header__action header__action"
+                    data-tab-button="newsletter"
                     ><svg
                       class="header__action-icon"
                       xmlns="http://www.w3.org/2000/svg"
@@ -244,7 +250,7 @@
                       </div>
                       <span class="profile-sidebar__text">Профиль</span>
                     </div>
-                    <div class="profile-sidebar__item">
+                    <div class="profile-sidebar__item" data-tab-button="events">
                       <div
                         class="profile-sidebar__icon profile-sidebar__icon_fill"
                       >
@@ -260,7 +266,10 @@
                       </div>
                       <span class="profile-sidebar__text">Лента событий</span>
                     </div>
-                    <div class="profile-sidebar__item">
+                    <div
+                      class="profile-sidebar__item"
+                      data-tab-button="subscription"
+                    >
                       <div class="profile-sidebar__icon">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -274,7 +283,10 @@
                       </div>
                       <span class="profile-sidebar__text">Подписка</span>
                     </div>
-                    <div class="profile-sidebar__item">
+                    <div
+                      class="profile-sidebar__item"
+                      data-tab-button="newsletter"
+                    >
                       <div class="profile-sidebar__icon">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -362,7 +374,7 @@
               </aside>
               <div class="profile__body">
                 <div
-                  class="proifle__scoring scoring active"
+                  class="profile__scoring scoring active"
                   data-tab-body="scoring"
                 >
                   <div class="scoring__wrapper">
@@ -1134,6 +1146,193 @@
                         </button>
                       </div>
                     </form>
+                  </div>
+                </div>
+                <div
+                  class="profile__events events"
+                  data-tab-body="events"
+                  style="display: none"
+                >
+                  <div class="events__wrapper profile-wrapper">
+                    <h3 class="events__title profile-title">Лента событий</h3>
+                    <div class="events__items">
+                      <div class="events__item new">
+                        <span class="events__label"
+                          >Оформление подписки на месяц за $25</span
+                        >
+                        <time class="events__date">25 июня 2020, 21:40</time>
+                      </div>
+                      <div class="events__item new">
+                        <span class="events__label"
+                          >Запрос на переоценку вашего скоринга с 400 баллов до
+                          600 баллов</span
+                        >
+                        <time class="events__date">25 июня 2020, 21:40</time>
+                      </div>
+                      <div class="events__item">
+                        <span class="events__label"
+                          >Списание $ 25 с карты **** 2144</span
+                        >
+                        <time class="events__date">25 июня 2020, 21:40</time>
+                      </div>
+                      <div class="events__item">
+                        <span class="events__label"
+                          >Запрос на переоценку вашего скоринга с 400 баллов до
+                          600 баллов</span
+                        >
+                        <time class="events__date">25 июня 2020, 21:40</time>
+                      </div>
+                      <div class="events__item">
+                        <span class="events__label"
+                          >Запрос на переоценку вашего скоринга</span
+                        >
+                        <time class="events__date">25 июня 2020, 21:40</time>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="profile__subscription subscription"
+                  data-tab-body="subscription"
+                  style="display: none"
+                >
+                  <div class="subscription__wrapper">
+                    <div class="subscription__current profile-wrapper">
+                      <h3 class="subscription__title profile-title">
+                        Подписка со скидкой 60%
+                      </h3>
+                      <div class="subscription__data">
+                        <span class="subscription__old-sum">1 200₽</span>
+                        <strong class="subscription__sum">399₽</strong>
+                        <span class="subscription__name">Недельный план</span>
+                      </div>
+                      <ul class="subscription__features">
+                        <li class="subscription__feature">
+                          Быстрый кредит всего за 10 мин.
+                        </li>
+                        <li class="subscription__feature">
+                          Моментальные кредиты
+                        </li>
+                        <li class="subscription__feature">
+                          Еженедельные выплаты без задержек
+                        </li>
+                        <li class="subscription__feature">
+                          Гибкие условия и широкий выбор компаний
+                        </li>
+                      </ul>
+                      <a
+                        class="subscription__button button button_light"
+                        href="#"
+                        >Отменить подписку
+                        <span class="button__icon"
+                          ><svg>
+                            <use
+                              href="./images/sprite.svg#arrow"
+                              xlink:href="./images/sprite.svg#arrow"
+                            ></use></svg></span
+                      ></a>
+                    </div>
+                    <div class="subscription__info profile-wrapper">
+                      <span class="subscription__label"
+                        >Как вернуть деньги?</span
+                      >
+                      <p class="subscription__description">
+                        Сайт рыбатекст поможет дизайнеру, верстальщику,
+                        вебмастеру сгенерировать несколько абзацев более менее
+                        осмысленного текста рыбы на русском языке, а начинающему
+                        оратору отточить навык публичных выступлений в домашних
+                        условиях. При создании генератора мы использовали
+                        небезизвестный универсальный код речей.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="profile__newsletter newsletter"
+                  data-tab-body="newsletter"
+                  style="display: none"
+                >
+                  <div class="newsletter__wrapper profile-wrapper">
+                    <h3 class="newsletter__title profile-title">Рассылка</h3>
+                    <div class="newsletter__items">
+                      <div class="newsletter__item">
+                        <div class="newsletter__checkbox checkbox">
+                          <div class="checkbox__wrapper">
+                            <label class="checkbox__label"
+                              ><input
+                                checked="checked"
+                                class="checkbox__input"
+                                type="checkbox" />
+                              <div class="checkbox__icon">
+                                <svg>
+                                  <use
+                                    href="./images/sprite.svg#check"
+                                    xlink:href="./images/sprite.svg#check"
+                                  ></use>
+                                </svg></div
+                            ></label>
+                          </div>
+                        </div>
+                        <span class="newsletter__label">Email рассылка</span>
+                        <p class="newsletter__description">
+                          По своей сути рыбатекст является альтернативой
+                          традиционному lorem ipsum, который вызывает у некторых
+                          людей недоумение при попытках прочитать рыбу текст. В
+                          отличии от lorem ipsum, текст рыба на русском языке
+                          наполнит любой макет непонятным смыслом.
+                        </p>
+                      </div>
+                      <div class="newsletter__item">
+                        <div class="newsletter__checkbox checkbox">
+                          <div class="checkbox__wrapper">
+                            <label class="checkbox__label"
+                              ><input class="checkbox__input" type="checkbox" />
+                              <div class="checkbox__icon">
+                                <svg>
+                                  <use
+                                    href="./images/sprite.svg#check"
+                                    xlink:href="./images/sprite.svg#check"
+                                  ></use>
+                                </svg></div
+                            ></label>
+                          </div>
+                        </div>
+                        <span class="newsletter__label">SMS рассылка</span>
+                        <p class="newsletter__description">
+                          По своей сути рыбатекст является альтернативой
+                          традиционному lorem ipsum, который вызывает у некторых
+                          людей недоумение при попытках прочитать рыбу текст. В
+                          отличии от lorem ipsum, текст рыба на русском языке
+                          наполнит любой макет непонятным смыслом.
+                        </p>
+                      </div>
+                      <div class="newsletter__item">
+                        <div class="newsletter__checkbox checkbox">
+                          <div class="checkbox__wrapper">
+                            <label class="checkbox__label"
+                              ><input class="checkbox__input" type="checkbox" />
+                              <div class="checkbox__icon">
+                                <svg>
+                                  <use
+                                    href="./images/sprite.svg#check"
+                                    xlink:href="./images/sprite.svg#check"
+                                  ></use>
+                                </svg></div
+                            ></label>
+                          </div>
+                        </div>
+                        <span class="newsletter__label"
+                          >Партнерская рассылка</span
+                        >
+                        <p class="newsletter__description">
+                          По своей сути рыбатекст является альтернативой
+                          традиционному lorem ipsum, который вызывает у некторых
+                          людей недоумение при попытках прочитать рыбу текст. В
+                          отличии от lorem ipsum, текст рыба на русском языке
+                          наполнит любой макет непонятным смыслом.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
