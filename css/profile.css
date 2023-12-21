@@ -1822,6 +1822,24 @@ textarea.input__target {
     background: var(--bg-hover);
 }
 
+*::-webkit-media-controls-panel {
+    display: none !important;
+    -webkit-appearance: none;
+}
+
+/* Old shadow dom for play button */
+*::-webkit-media-controls-play-button {
+    display: none !important;
+    -webkit-appearance: none;
+}
+
+/* New shadow dom for play button */
+/* This one works! */
+*::-webkit-media-controls-start-playback-button {
+    display: none !important;
+    -webkit-appearance: none;
+}
+
 .scoring__wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
