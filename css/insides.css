@@ -1954,27 +1954,36 @@ textarea.input__target {
 
 .data-check {
     --clr: var(--base-rich-black, #053969);
-    padding: 0 0 40px 0;
 }
 
-@media (min-width: 768px) {
-    .data-check {
-        padding: 0 0 70px 0;
-    }
+.data-check .main-block {
+    max-width: 37.5rem;
 }
 
-@media (min-width: 1200px) {
-    .data-check {
-        padding: 0 0 100px 0;
-    }
-}
-
-.data-check__wrapper {
-    max-width: 23.75rem;
+.data-check__head {
+    max-width: 10.625rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media (min-width: 576px) {
+    .data-check__head {
+        max-width: 12.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .data-check__head {
+        max-width: 14.375rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .data-check__head {
+        max-width: 16.875rem;
+    }
 }
 
 .data-check__status {
@@ -1987,12 +1996,13 @@ textarea.input__target {
 }
 
 .data-check__video {
-    width: 100%;
-    height: 100%;
+    width: 150%;
+    height: 150%;
     display: block;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
     outline: none;
     border: none;
     background: none;
@@ -2000,7 +2010,7 @@ textarea.input__target {
 
 .data-check__percent {
     display: block;
-    font-size: 2.688rem;
+    font-size: 1.875rem;
     line-height: 1.256;
  /* 125% */
     text-align: center;
@@ -2011,8 +2021,14 @@ textarea.input__target {
     transform: translate3d(-50%, -50%, 0);
 }
 
+@media (min-width: 768px) {
+    .data-check__percent {
+        font-size: 2.688rem;
+    }
+}
+
 .data-check__title {
-    margin: -2rem 0 0.5rem 0;
+    margin: 1.25rem 0 0.5rem 0;
     display: block;
     font-size: 1.5rem;
     font-weight: 600;
@@ -2026,7 +2042,7 @@ textarea.input__target {
 
 @media (min-width: 768px) {
     .data-check__title {
-        margin: -2rem 0 0.75rem 0;
+        margin: 0.938rem 0 0.75rem 0;
         font-size: 1.875rem;
     }
 }
