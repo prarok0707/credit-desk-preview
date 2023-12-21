@@ -1982,6 +1982,7 @@ textarea.input__target {
     height: 0;
     padding: 0 0 100% 0;
     position: relative;
+    overflow: hidden;
 }
 
 .data-check__video {
@@ -1991,6 +1992,9 @@ textarea.input__target {
     position: absolute;
     top: 0;
     left: 0;
+    outline: none;
+    border: none;
+    background: none;
 }
 
 .data-check__percent {
