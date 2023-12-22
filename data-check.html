@@ -75,25 +75,49 @@
       <main class="content">
         <div class="data-check">
           <div class="container">
-            <div class="main-block">
-              <div class="main-block__body">
-                <div class="data-check__head">
-                  <div class="data-check__status">
-                    <video autoplay muted loop class="data-check__video">
-                      <source
-                        src="./videos/data-check/video_01.mp4"
-                        type="video/mp4"
-                      /></video
-                    ><span class="data-check__percent">0%</span>
-                  </div>
+            <div class="data-check__wrapper">
+              <div class="data-check__status">
+                <div class="data-chekc__bar">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 157 157"
+                    fill="none"
+                  >
+                    <circle
+                      cx="78.5"
+                      cy="78.5"
+                      r="71.5"
+                      stroke="white"
+                      stroke-width="3"
+                    />
+                    <circle
+                      class="data-check__circle"
+                      cx="78.5"
+                      cy="78.5"
+                      r="71.5"
+                      stroke-linecap="round"
+                      stroke="#FEE000"
+                      stroke-width="0"
+                      stroke-dasharray="0, 449"
+                    />
+                  </svg>
                 </div>
-                <h2 class="data-check__title">Проверяем ваши данные</h2>
-                <span class="data-check__subtitle"
-                  >Наши алгоритмы обрабатывают введенную Вами информацию на двух
-                  предыдущих страницах. Это займет менее 10 секунд. Пожалуйста,
-                  не закрывайте эту страницу.</span
-                >
+                <span class="data-check__percent">0%</span>
+                <div class="data-check__checked">
+                  <svg>
+                    <use
+                      href="./images/sprite.svg#check"
+                      xlink:href="./images/sprite.svg#check"
+                    ></use>
+                  </svg>
+                </div>
               </div>
+              <h2 class="data-check__title">Проверяем ваши данные</h2>
+              <span class="data-check__subtitle"
+                >Наши алгоритмы обрабатывают введенную Вами информацию на двух
+                предыдущих страницах. Это займет менее 10 секунд. Пожалуйста, не
+                закрывайте эту страницу.</span
+              >
             </div>
           </div>
         </div>
