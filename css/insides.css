@@ -1979,7 +1979,7 @@ textarea.input__target {
 
 .data-check__status {
     width: 100%;
-    max-width: 18.75rem;
+    max-width: 15.625rem;
     position: relative;
 }
 
@@ -1995,6 +1995,12 @@ textarea.input__target {
     visibility: visible;
     transform: translate3d(-50%, -50%, 0) scale(1);
     transition-delay: 0.5s;
+}
+
+@media (min-width: 768px) {
+    .data-check__status {
+        max-width: 18.75rem;
+    }
 }
 
 .data-chekc__bar {
