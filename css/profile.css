@@ -217,6 +217,9 @@ body.no-scroll {
     justify-content: center;
     gap: 10px;
     cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
     font-size: var(--fs);
     font-style: normal;
     text-align: center;
